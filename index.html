@@ -8,16 +8,19 @@
   <title>Manikanta Sanaboina - Portfolio</title>
   <link rel='stylesheet' href='style.css'>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <header>
     <div class='container'>
       <h1>Datta Manikanta Sanaboina</h1>
-      <p>Software Engineer | Value Labs</p>
+      <p><span id="typed-text"></span></p>
     </div>
     <nav>
       <ul>
+        <li><a href="https://www.linkedin.com/in/datta-manikanta-sanaboina-00281a213/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         <li><a href='#about'>About</a></li>
         <li><a href='#skills'>Skills</a></li>
         <li><a href='#experience'>Experience</a></li>
@@ -29,7 +32,7 @@
   </header>
 
   <main>
-    <section id='about' class='container'>
+    <section id='about' class='container' data-aos="fade-up">
       <h2>About Me</h2>
       <p>I am a C# Developer specializing in microservices architecture with 2.7 years of experience designing console applications connected 
         via Kafka and deployed through Docker/Kubernetes. Skilled in .NET MVC and SQL Server, with strong command of Azure cloud services 
@@ -37,7 +40,9 @@
         optimizing processes, and integrating modern cloud solutions.</p>
     </section>
 
-    <section id='skills' class='container'>
+    <hr class="section-divider">
+
+    <section id='skills' class='container' data-aos="fade-up">
       <h2>Skills</h2>
       <ul>
         <li><strong>Languages:</strong> C#, Java, JavaScript</li>  
@@ -46,7 +51,9 @@
       </ul>
     </section>
 
-    <section id='experience' class='container'>
+    <hr class="section-divider">
+
+    <section id='experience' class='container' data-aos="fade-up">
       <h2>Experience</h2>
       <p><strong>Software Developer</strong> - Value Labs (Jan 2023 - Present)</p>
       <ul>
@@ -68,7 +75,9 @@
       </ul>
     </section>
 
-    <section id='achievements' class='container'>
+    <hr class="section-divider">
+
+    <section id='achievements' class='container' data-aos="fade-up">
       <h2>Achievements</h2>
       <ul>
         <li>Achieved Microsoft Certified: <a
@@ -84,7 +93,9 @@
       </ul>
     </section>
 
-    <section id='projects' class='container'>
+    <hr class="section-divider">
+
+    <section id='projects' class='container' data-aos="fade-up">
       <h2>Projects</h2>
       <ul>
         <li>
@@ -110,7 +121,9 @@
       </ul>
     </section>
 
-    <section id='contact' class='container'>
+    <hr class="section-divider">
+
+    <section id='contact' class='container' data-aos="fade-up">
       <h2>Contact</h2>
       <form id='contactForm'>
         <input type='text' id='name' placeholder='Your Name' required>
@@ -124,10 +137,15 @@
 
   <footer>
     <div class='container'>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/datta-manikanta-sanaboina-00281a213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
       <p>&copy; 2025 Manikanta Sanaboina</p>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src='script.js'></script>
 </body>
 

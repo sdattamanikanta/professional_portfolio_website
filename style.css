@@ -1,15 +1,22 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
+  background: linear-gradient(to right, #e6e9f0 0%, #eef1f5 100%);
   color: #333;
+  line-height: 1.6;
 }
 
 header {
   background-color: #003366;
   color: white;
   padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -27,28 +34,38 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a .fab {
+  font-size: 1.5rem;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #aaccff;
+  text-decoration: none;
 }
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 960px;
   margin: auto;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
+  margin: 0;
 }
 
 input, textarea {
   margin-bottom: 10px;
   padding: 10px;
   font-size: 1em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 button {
@@ -63,9 +80,56 @@ button:hover {
   background-color: #0055aa;
 }
 
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #eef2f5;
+}
+
+.social-links a {
+  color: #003366;
+  margin: 0 10px;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0055aa;
+}
+
+#typed-text {
+  color: #aaccff;
+}
+
+.typed-cursor {
+  color: #aaccff;
+}
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 }
