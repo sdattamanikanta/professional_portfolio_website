@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Manikanta Sanaboina - Portfolio</title>
+  <link rel='stylesheet' href='style.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class='container'>
+      <h1>Datta Manikanta Sanaboina</h1>
+      <p>Software Engineer | Value Labs</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#skills'>Skills</a></li>
+        <li><a href='#experience'>Experience</a></li>
+        <li><a href='#achievements'>Achievements</a></li>
+        <li><a href='#projects'>Projects</a></li>
+        <li><a href='#contact'>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id='about' class='container'>
+      <h2>About Me</h2>
+      <p>I am a C# Developer specializing in microservices architecture with 2.7 years of experience designing console applications connected 
+        via Kafka and deployed through Docker/Kubernetes. Skilled in .NET MVC and SQL Server, with strong command of Azure cloud services 
+        including Functions, Cosmos DB, Storage Accounts, Key Vault, and API Management. Recognized for maintaining legacy systems, 
+        optimizing processes, and integrating modern cloud solutions.</p>
+    </section>
+
+    <section id='skills' class='container'>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C#, Java, JavaScript</li>  
+        <li><strong>Developer Tools:</strong> Visual Studio, VS Code, SQL-Server, FileZilla</li>
+        <li><strong>Technologies/Frameworks:</strong> Dotnet Core MVC, Web API, Azure, Apache Kafka, Microservices</li>
+      </ul>
+    </section>
+
+    <section id='experience' class='container'>
+      <h2>Experience</h2>
+      <p><strong>Software Developer</strong> - Value Labs (Jan 2023 - Present)</p>
+      <ul>
+        <li>
+          Optimized C# applications using SonarQube, reducing code smells and increasing code and branch coverage. Implemented multiple Azure 
+          Functions (Timer, HTTP, and DB triggers), resolved issues in MVC applications and stored procedures, and migrated C# applications from 
+          .NET 6 to .NET 8, strengthening expertise in Azure services
+        </li>
+      <li>
+          Developed and maintained console applications integrated via Kafka input/output topics, deployed and managed on Docker and 
+          Kubernetes, gaining hands-on experience with containerization and orchestration. 
+      </li>
+      <li>
+          Implemented Azure services including Functions, Storage Accounts, Cosmos DB, Key Vault, and API Management into microservices based 
+          applications to build scalable and secure enterprise solutions. Enhanced .NET MVC applications connected with SQL Server by writing 
+          stored procedures, resolving defects, and improving application stability. Implemented two-factor authentication via SMTP server to 
+          safeguard sensitive data. 
+        </li>
+      </ul>
+    </section>
+
+    <section id='achievements' class='container'>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Achieved Microsoft Certified: <a
+            href="https://learn.microsoft.com/en-us/users/dattamanikanta-5580/credentials/bb60be0831119944">Azure
+            Fundamentals Certification</a> in August 2024 </li>
+        <li>Secured a Global Rank of 2026 in TCS CodeVita Season 10, earning a <a
+            href="https://drive.google.com/file/d/1g8Qrf5YqXI6qzu-9sTe22OGCZMTvmV6w/view?usp=drive_link">Rank
+            Certificate</a> for competitive programming excellence.</li>
+        <li>Mentored students in Data Structures & Algorithms for Smart Interviews, earning a <a
+            href="https://smartinterviews.in/certificate/c66f9b86"> Mentorship Certificate </a></li>
+        <li>Earned the Knight badge on LeetCode by ranking in the top 25% in contest ratings, achieving a peak rating of
+          1881.</li>
+      </ul>
+    </section>
+
+    <section id='projects' class='container'>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h4>Bristow and Sutor - Redditch, England | Software Developer (Jan 2023 - Present)</h4>
+          <ul>
+            <li>
+              Contributed to the development of the Case Ingestion web platform, enabling council clients to add products, upload debt-related files for processing. Integrated with third-party trace providers (TransUnion, LexisNexis) to retrieve debtor information, initiating debt recovery workflows including messaging, letter generation, and enforcement actions.
+            </li>
+            <li>
+              Built and maintained microservices using kafka messaging system on Azure Cloud to orchestrate end-to-end debt collection processes. Supported and enhanced legacy systems using SSMS and SSRS to generate client-facing payment and return files.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Spend-Smart | C#, Dotnet Core MVC</h4>
+          <div>
+            Built Dotnet Core MVC application to log the expenses and manage them such as (Create, Read, Update, Delete)
+            operations using
+            Entity Framework In-Memory package.
+            GitHub: <a href="https://github.com/sdattamanikanta/SpendSmart">CRUD application code</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id='contact' class='container'>
+      <h2>Contact</h2>
+      <form id='contactForm'>
+        <input type='text' id='name' placeholder='Your Name' required>
+        <input type='email' id='email' placeholder='Your Email' required>
+        <textarea id='message' placeholder='Your Message' required></textarea>
+        <button type='submit'>Send</button>
+      </form>
+      <p id='formMessage'></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class='container'>
+      <p>&copy; 2025 Manikanta Sanaboina</p>
+    </div>
+  </footer>
+
+  <script src='script.js'></script>
+</body>
+
+</html>
